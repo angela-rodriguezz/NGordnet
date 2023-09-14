@@ -14,6 +14,8 @@ Collecting the historical frequencies of all observed English ngrams[^1] from [G
 - **HistoryTextHandler**: A class that takes in a data type NGordNetQuery which registers the data collection into the website tool and returns the history of the word that the user has typed in years and count respectively.
 -  **HistoryHandler**: A class that creates a graph visual of the collected data and registers it as a String that contains a base-64 encoded image of the appropriate plot.
 
+## Conclusion
+
 ## Algorithm
 
 
