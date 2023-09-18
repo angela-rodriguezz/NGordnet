@@ -15,7 +15,7 @@ Collecting the historical frequencies of all observed English ngrams[^1] from [G
 -  **HistoryHandler**: A class that creates a graph visual of the collected data and registers it as a String that contains a base-64 encoded image of the appropriate plot.
 
 ## Conclusion
-
+This project introduces software engineering techniques.
 ## Algorithm
 
 
