@@ -22,12 +22,11 @@ WordNet groups words into sets of synonyms called synsets and describes the syma
 
 Each node in the graph is a **synset** which is all groups of words with the same meaning. Words could belong to multiple synsets and therefore could belong to multiple different lists. In order to handle each of these conditions and incorporate them within our visualizer, we must include more data structures for us to gather these words into their proper hyponym datasets.
 
-- **HyponymsHandler**: The implementation for the ___Hyponyms___ button in the visualizor.
+- **HyponymsHandler**: The implementation for the ___Hyponyms___ button in the visualizer. This will require reading different types of datasets and synthesizing the results with the dataset that we had generated from the previous data structures. For this to work, we need to implement TimeSeries and NGramMap in order to gain the ability of the `countHistory()` and `totalCountHistory()` of each of the data. The button should output a string representation of a list of the hyponyms of the single word, including the word itself. The list should be in alphabetical order, with no repeated words. For instance, in the graph above, the output for "descent" should be `[descent, jump, parachuting]`. I incorporate the data using text files from `hyponyms.txt` and `synsets.txt`.
+- **Graph**: A class for connecting each synset to the hyponym that aids in outputting into the visualizer. In this class, I incorporate Depth-First Search (DFS) which continuously adds nodes, edges, and traverses to observe the data. Therefore, it converts the WordNet dataset files into a graph to find all hyponyms of the word in the given graph.
 
 ## Conclusion
 This project introduces software engineering techniques.
-
-
 
 [^1]: Ngram: a sequence of words and phrases
 [^2]: 1gram: individual words
