@@ -14,9 +14,19 @@ Collecting the historical frequencies of all observed English ngrams[^1] from [G
 - **HistoryTextHandler**: A class that takes in a data type NGordNetQuery which registers the data collection into the website tool and returns the history of the word that the user has typed in years and count respectively.
 -  **HistoryHandler**: A class that creates a graph visual of the collected data and registers it as a String that contains a base-64 encoded image of the appropriate plot.
 
+## Incorporating WordNet Dataset
+
+WordNet groups words into sets of synonyms called synsets and describes the symantic relationships between these words together.
+
+![.](https://sp23.datastructur.es/materials/proj/proj2b/wordnet-fig1.png)
+
+Each node in the graph is a **synset** which is all groups of words with the same meaning. Words could belong to multiple synsets and therefore could belong to multiple different lists. In order to handle each of these conditions and incorporate them within our visualizer, we must include more data structures for us to gather these words into their proper hyponym datasets.
+
+- **HyponymsHandler**: The implementation for the ___Hyponyms___ button in the visualizor.
+
 ## Conclusion
 This project introduces software engineering techniques.
-## Algorithm
+
 
 
 [^1]: Ngram: a sequence of words and phrases
